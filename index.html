@@ -5,83 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fan Xi Nê Ma Soul</title>
+    <title>Justin Nguyễn</title>
+
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <!-- 
-        Các thẻ HTML thông dụng
-            1. h1 -> h6 - heading
-            2. p - paragraph
-            3. img - image
-            4. a - anchor
-            5. ul, li - unordered list, list item
-            6. table
-            7. input
-            8. button
-            9. div
+        CSS trong HTML
+            1. Internal
+            2. External
+            3. Inline
      -->
 
-    <div>
-        <h1>Blue Valentine (2010)</h1>
+    <!-- Internal CSS -->
+    <style>
+        * {
+            font-family: 'Segoe UI';
+        }
 
-        <p>Điều hối tiếc lớn nhất chính là, khoảnh khắc khi người muốn rời đi, chúng ta lại chẳng thể gặp mặt để nói rõ
-            mọi
-            chuyện.
-            Nếu có thể, thì chỉ cần một cái ôm thôi cũng đủ để giải quyết mọi chuyện.
-            Nhưng cuối cùng lại chẳng có bất cứ lời giải thích nào, tựa như đã trở thành những người xa lạ với nhau.</p>
-        <img src="https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-6/315206532_186635930592161_5140478008883144887_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=Ut0QixTUGTEAX-oS5oN&_nc_ht=scontent.fsgn3-1.fna&oh=00_AfDEGm9ql5KqIZjUaSqT8R4d_0yaBREwWNq1gfP7rYUJMg&oe=6373DB36"
-            alt="Ảnh trong phim">
+        h1 {
+            color: brown;
+            font-size: 30px;
+        }
+    </style>
 
-        <ul>
-            <li>Người đã muốn rời đi, thì làm sao giữ nổi 🙂</li>
-            <li>cần lắm một cái ôm từ họ và rồi hạnh phúc lại trở lại ...</li>
-            <li>Có những mqh không cần phải gặp mặt thời điểm buông bỏ nha. Cho dù ôm hay níu kéo cách mấy khi đã đủ mệt
-                thì
-                cũng bằng thừa. Nên trân trọng lúc còn có thể thôi, mọi thứ do mình lựa chọn, cơ hội do mình bỏ lỡ, đến
-                đường cuối rồi chẳng còn gì để tiếc cả.</li>
-            <li>Người đã muốn rời đi thì gặp mặt cũng chẳng được lâu. Giải thích thì chỉ đơn giản là tìm đủ lý do nói để
-                rời
-                đi. Còn cái ôm hả? Ôm cho có theo ý đối phương. Không hề níu giữ được gì mà còn hạ thấp bản thân. Cái ôm
-                chỉ
-                khiến bạn nhớ lâu và luyến tiếc hơn thôi. Vậy nên người đã muốn rời đi thì buông thôi.
-                Hoặc là do mình gặp chưa đúng người.</li>
-            <a href="https://www.facebook.com/photo/?fbid=186635933925494&set=a.172709998651421">Xem thêm</a>
-        </ul>
+    <!-- Inline CSS -->
+    <h1 style="color: blue; font-family: 'Cambira'; font-size: 30px;">Y Học</h1>
 
-        <table>
-            <thead>
-                <th>Tên</th>
-                <th>Link facebook</th>
-            </thead>
+    <p>Đây là tình trạng đột quỵ do các cục máu đông làm tắc nghẽn động mạch, cản trở quá trình máu lưu thông lên não,
+        chiếm khoảng 85% tổng số các ca bị đột quỵ hiện nay.</p>
 
-            <tbody>
-                <tr>
-                    <td>Nguyễn Thanh Trúc</td>
-                    <td>
-                        <button>
-                            <a
-                                href="https://www.facebook.com/rua47?comment_id=Y29tbWVudDoxODY2MzY3NjA1OTIwNzhfNjI3OTQ1NjQ5MTEzNjcx&__cft__[0]=AZVmFKveBaGLE4PFIuIf9GqhTbORBgun7M_6VtstjcXvlTrvX5ii7mrUNYJQq54RmjBIEiFO4sCK1mYiUOd3R5dgEJv2lTwTd0NDzBqpAoXeYUt53lXWFFyC5pHdeF3WjVGLouHtRV7J3WnWLLBQZex717v7fPek2hmVAZBX1PuBIuLKD3nc5QJb8lhHr6EDsHON4yc-McvFzJB5Q0Bk7GlU&__tn__=R*F">Facebook</a>
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Hoang Duc</td>
-                    <td>
-                        <button>
-                            <a
-                                href="https://www.facebook.com/profile.php?id=100083788280129&comment_id=Y29tbWVudDoxODY2MzY3NjA1OTIwNzhfODcyNDcyNzAzOTA5MjI3&__cft__[0]=AZVmFKveBaGLE4PFIuIf9GqhTbORBgun7M_6VtstjcXvlTrvX5ii7mrUNYJQq54RmjBIEiFO4sCK1mYiUOd3R5dgEJv2lTwTd0NDzBqpAoXeYUt53lXWFFyC5pHdeF3WjVGLouHtRV7J3WnWLLBQZex717v7fPek2hmVAZBX1PuBIuLKD3nc5QJb8lhHr6EDsHON4yc-McvFzJB5Q0Bk7GlU&__tn__=R*F">Facebook</a>
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <input type="text" , placeholder="Test thẻ input">
-        <input type="checkbox">
-        <input type="radio">
-    </div>
-
+    <img src="https://scontent.fsgn13-3.fna.fbcdn.net/v/t39.30808-6/313423010_804590757314674_1285345117018674831_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=nEtm4lU-fbYAX8XTDVY&_nc_ht=scontent.fsgn13-3.fna&oh=00_AfAVe_VvXI261IBec4RnOWq0KiJjVcPy3L7-MbXuhGhZbQ&oe=637433C6"
+        alt="Ảnh cục máu đông">
 </body>
 
 </html>
