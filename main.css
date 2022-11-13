@@ -3,11 +3,19 @@
     font-family: 'Segoe UI';
 }
 
+/* Global variable */
+:root {
+    --header-color: red;
+    --header-font: 30px;
+}
+
 #header {
-    color: red;
-    font-size: 30px;
+    color: var(--header-color);
+    font-size: var(--header-font);
 }
 
 .body {
-    font-size: 16px;
+    /* Local variable */
+    --body-font: 16px;
+    font-size: var(--body-font);
 }
