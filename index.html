@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padding - Margin - Border</title>
+    <title>Box-sizing</title>
 
     <!-- Link CSS -->
     <!-- <link rel="stylesheet" href="main.css"> -->
@@ -13,41 +13,26 @@
 
 <body>
     <!--   
-        CSS padding - làm tăng kích thước của element
-        CSS border - làm tăng kích thước của element
-        CSS margin - không làm tăng kích thước của element
+        CSS box-sizing
      -->
 
-    <div class="box box1">Box 1 - padding</div>
-    <div class="box box2">Box 2 - margin</div>
-    <div class="box box3">Box 3 - border</div>
+    <div class="box box1">Box-sizing</div>
 
 
     <style>
         .box {
             width: 200px;
             height: 100px;
+            background-color: red;
             color: white;
+
+            box-sizing: border-box;
+            padding: 16px;
+            border: 2px solid black;
+
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        .box1 {
-            background-color: black;
-            padding: 50px;
-        }
-
-        .box2 {
-            background-color: blue;
-            margin: 50px;
-        }
-
-        .box3 {
-            background-color: firebrick;
-            border-width: 10px;
-            border-style: solid;
-            border-color: blueviolet;
         }
     </style>
 </body>
