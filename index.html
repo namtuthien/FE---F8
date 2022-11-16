@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box-sizing</title>
+    <title>Background-clip</title>
 
     <!-- Link CSS -->
     <!-- <link rel="stylesheet" href="main.css"> -->
@@ -13,26 +13,29 @@
 
 <body>
     <!--   
-        CSS box-sizing
+        CSS Background-clip
      -->
 
-    <div class="box box1">Box-sizing</div>
+    <div class="box box1">Background-clip</div>
 
 
     <style>
         .box {
-            width: 200px;
+            width: 100%;
             height: 100px;
-            background-color: red;
             color: white;
-
+            background-color: black;
             box-sizing: border-box;
-            padding: 16px;
-            border: 2px solid black;
+            padding: 20px;
+            border: 10px dashed blue;
+
+            /* background-clip: border-box;
+            background-clip: padding-box; */
+            background-clip: content-box;
 
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
         }
     </style>
 </body>
