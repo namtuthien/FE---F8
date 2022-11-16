@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background-clip</title>
+    <title>Background-image</title>
 
     <!-- Link CSS -->
     <!-- <link rel="stylesheet" href="main.css"> -->
@@ -13,29 +13,31 @@
 
 <body>
     <!--   
-        CSS Background-clip
-     -->
+        CSS background-image
+            - background-repeat: no-repeat;
+            - background-repeat: repeat-x; // chỉ lặp chiều ngang
+            - background-repeat: repeat-y; // chỉ lặp chiều dọc
+            - background-image: linear-gradient(125deg, black, gray); // loang màu
+            - background-size: contain; // lấy kích thước tối đa có thể
+            - background-size: cover; // lấy kích thước tối đa có thể - chấp nhận việc che mất ảnh
+            - background-origin = background-clip nhưng sử dụng cho ảnh
+            shorthand: background: url() no-repeat center / contain;
+        -->
 
-    <div class="box box1">Background-clip</div>
-
+    <div class="header"></div>
 
     <style>
-        .box {
+        .header {
             width: 100%;
-            height: 100px;
-            color: white;
-            background-color: black;
-            box-sizing: border-box;
-            padding: 20px;
-            border: 10px dashed blue;
-
-            /* background-clip: border-box;
-            background-clip: padding-box; */
-            background-clip: content-box;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 100vh;
+            /* background-image: url(https://dreampet.com.vn/wp-content/uploads/2018/07/tu-the-ngu-nam-nghieng-ve-mot-ben.jpg), url(https://kenh14cdn.com/2020/10/12/photo-1-1602466613894629500851.png); */
+            background-image: linear-gradient(125deg, rgba(255, 263, 200, 0.1), rgba(265, 34, 98, 0.2)), url(https://kenh14cdn.com/2020/10/12/photo-1-1602466613894629500851.png);
+            background-size: 200px auto;
+            /* background-size: contain; */
+            background-repeat: no-repeat;
+            /* background-position: center; */
+            /* background-position: top 20px right 20px; */
+            background-position: 20px 20px;
         }
     </style>
 </body>
