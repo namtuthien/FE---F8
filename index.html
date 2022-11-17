@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pseudo classes</title>
+    <title>CSS position</title>
 
     <!-- Link CSS -->
     <!-- <link rel="stylesheet" href="main.css"> -->
@@ -13,27 +13,21 @@
 
 <body>
     <!--   
-        CSS pseudo classes
-            - :root
-            - :hover
-            - :active
-            - :first-child
-            - :last-child
+        CSS Position
+            - relative - coi element hiện tại là gốc tọa độ, có thể di chuyển đè lên các element khác
+            - absolute - phụ thuộc vào thẻ cha gần nhất có thuộc tính position làm gốc tọa độ
+            - fixed - cố định element với trình duyệt
+            - sticky - hạn chế sử dụng
+
+            caniuse.com
     -->
 
-    <div class="box box1">:hover</div>
-    <div class="box box2">:active</div>
-    <ul>
-        <li>
-            <div class="box boxf">First box</div>
-        </li>
-        <li>
-            <div class="box boxs">Second box</div>
-        </li>
-        <li>
-            <div class="box boxt">Third box</div>
-        </li>
-    </ul>
+    <div class="box box1">relative</div>
+    <div class="box box2">absolute
+        <div class="box boxchild"></div>
+    </div>
+    <div class="box box3">fixed</div>
+    <p>a</p>
 
     <style>
         * {
@@ -54,27 +48,32 @@
 
         .box1 {
             background-color: pink;
+            position: relative;
+            /* top: 300px; */
         }
 
         .box2 {
             background-color: blueviolet;
+            position: relative;
         }
 
-        .box1:hover {
-            background-color: black;
-            color: white;
+        .boxchild {
+            background-color: rgba(255, 234, 112, 0.3);
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            right: 10px;
+            left: 10px;
         }
 
-        .box2:active {
-            background-color: red;
+        .box3 {
+            background-color: green;
+            position: fixed;
+            top: 0;
         }
 
-        li:first-child {
-            background-color: yellow;
-        }
-
-        li:last-child {
-            background-color: gray;
+        p {
+            height: 10000px;
         }
     </style>
 </body>
